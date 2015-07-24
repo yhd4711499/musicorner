@@ -1,0 +1,15 @@
+#pageNotes.page-notes.page
+	section.hero.hero-notes
+		.prpl-bgv-container
+		h1 
+		aside.secondary-nav
+			//- a.heroLink All
+			//- a.heroLink Projects
+			//- a.heroLink Savvy
+	section.home-notes-list.notes-list-full
+		each posts
+			+blogEntry
+		else
+			p.giant-hint No articles for now
+		+infiniteLoader
+		

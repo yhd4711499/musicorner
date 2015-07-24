@@ -1,0 +1,35 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+markdown
+accounts-password
+#autopublish
+natestrauser:font-awesome
+#insecure
+coffeescript
+vsivsi:file-collection
+less
+mquandalle:jade
+iron:router
+fourseven:scss
+#meteoric:ionicons-sass
+#meteoric:ionic-sass
+#meteoric:ionic
+meteorhacks:aggregate
+meteorhacks:npm
+
+
+npm-container
+kaptron:minimongoid
+#mrt:medium-editor-updated
+#alethes:pages
+#percolate:paginated-subscription
+mrt:moment
+#service-configuration
+pahans:reactive-modal
+mizzao:bootboxjs
+mizzao:bootstrap-3

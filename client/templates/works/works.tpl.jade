@@ -1,0 +1,14 @@
+#pageCaseStudios.page-case-studies.page
+	section.hero.hero-work
+		.prpl-bgv-container
+		h1.featured-header
+		aside.secondary-nav
+			//- a.heroLink All
+			//- a.heroLink Projects
+			//- a.heroLink Savvy
+	section.case-study-list
+		each posts
+			+caseStudyEntry
+		else
+			p.giant-hint No works for now
+		

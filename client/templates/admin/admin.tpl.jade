@@ -1,0 +1,28 @@
+section.hero.hero-contact
+	.prpl-bgv-container
+	h1 We just feel like we can talk to you
+h2.giant-header Staff Only
+if currentUser
+	section.form-area.form-area-contact.default#form
+		ul.form-options.massive-ul
+				li.massive-li
+					a(href="/new") New post
+				li.massive-li
+					a(href="/admin/tracks") Tracks
+				li.massive-li
+					a(data-action='logout') Logout
+else
+	section.form-area.form-area-contact.talk-biz#form
+		.forms-wrap
+			.shared-form-nav
+				.form-steps
+					a.btn-prev(data-action='login')
+						i.icon-arrow-right login
+					//- a.btn-next
+					//- 	i.icon-arrow-right right
+			.the-form.thr-form-talk-biz
+				form(name="bizForm").theme-default
+					.form-panel.active
+						.form-panel-content
+							p.question pass code
+							input(type="password").auto-size#password

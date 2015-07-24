@@ -1,0 +1,60 @@
+#pageNote.page-note.page.ng-scope
+  with post
+    link(href='http://fonts.googleapis.com/css?family=Inconsolata', rel='stylesheet', type='text/css')
+    aside.author-head(ng-show='disqusReady')
+      //- a(target='_blank', ng-href='https://www.facebook.com/PurpleRockScissors', href='https://www.facebook.com/PurpleRockScissors')
+      //-   img.photo(alt='Photo of author: PRPL ', src='/img/prpl-badge.jpg')
+      a.back(href='/blogs')
+        i.icon-arrow-left
+        |  All Posts
+      if currentUser
+        a.back.pull-right(data-action="delete")
+          i.fa.fa-trash-o
+          |  Delete
+    article.the-note(ng-show='thePost')
+      aside.title-info
+        p.note-meta
+          span.category.ng-binding Culture
+          |  /// 
+          span.date-posted.ng-binding {{blogFormatDate createdAt}}
+        h1 {{title}}
+      .the-hero
+      .the-content
+        +markdown
+          {{body}}
+      .PhotoCollage
+      aside.author-share
+        .inner-author-share
+          a
+            img.author.ng-binding(alt='Photo of author: PRPL ', src='/img/prpl-badge.jpg')
+          cite.note-author.ng-binding
+            | by 
+            a Ornithopter 
+            |  on March 19th, 2015
+          //- a.share-link(href='javascript:;')
+          //-   i.icon-share
+          //-   |  Share This Post
+        //- .share-area
+        //-   a.share-close(href='javascript:;')
+        //-     i.icon-cancel-squared
+        //-     |  Cancel
+        //-   input.auto-size.auto-copy-clipboard(type='text', data-autosize-input="{ 'space': 40 }", value='http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett')
+        //-   .sharing-options
+        //-     a.fb(target='_blank', ng-href='https://www.facebook.com/sharer/sharer.php?u=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett', href='https://www.facebook.com/sharer/sharer.php?u=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett')
+        //-       i.icon-facebook-squared
+        //-     a.gplus(target='_blank', ng-href='https://plus.google.com/share?url=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett', href='https://plus.google.com/share?url=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett')
+        //-       i.icon-gplus
+        //-     a.twitter(target='_blank', ng-href='http://twitter.com/share?url=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett&text=Great read: Spotlight: Katie Bartlett&via=prplrckscssrs', href='http://twitter.com/share?url=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett&text=Great read: Spotlight: Katie Bartlett&via=prplrckscssrs')
+        //-       i.icon-twitter
+        //-     a.in(target='_blank', ng-href='http://www.linkedin.com/shareArticle?mini=true&url=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett&title=PRPL Spotlight: Katie Bartlett | Agency Culture | PRPL Notes&source=Purple,%20Rock,%20Scissors!', href='http://www.linkedin.com/shareArticle?mini=true&url=http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett&title=PRPL Spotlight: Katie Bartlett | Agency Culture | PRPL Notes&source=Purple,%20Rock,%20Scissors!')
+        //-       i.icon-linkedin
+        //-     a.email(ng-href="mailto:?subject=Great read by PRPL&body=Thought you'd enjoy this article from the PRPL blog: Spotlight: Katie Bartlett, check it out! http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett", href="mailto:?subject=Great read by PRPL&body=Thought you'd enjoy this article from the PRPL blog: Spotlight: Katie Bartlett, check it out! http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett")
+        //-       i.icon-mail
+    //- dir-disqus.ng-isolate-scope(disqus-shortname='prpl', disqus-identifier='2891', disqus-url='http://purplerockscissors.com/notes/2891/spotlight-katie-bartlett', ready-to-bind='true', ng-show='disqusReady')
+    //-   #disqus_thread
+    //-     iframe#dsq-2(data-disqus-uid='2', allowtransparency='true', frameborder='0', scrolling='no', tabindex='0', title='Disqus', width='100%', src='http://disqus.com/embed/comments/?base=default&version=b4e1f3d8f7cab6fae1a1c9a0f133309d&f=prpl&t_i=2891&t_u=http%3A%2F%2Fpurplerockscissors.com%2Fnotes%2F2891%2Fspotlight-katie-bartlett&t_d=PRPL%20Spotlight%3A%20Katie%20Bartlett%20%7C%20Agency%20Culture%20%7C%20PRPL%20Notes&t_t=PRPL%20Spotlight%3A%20Katie%20Bartlett%20%7C%20Agency%20Culture%20%7C%20PRPL%20Notes&s_o=default#2', style='width: 100% !important; border: none !important; overflow: hidden !important; height: 301px !important;', horizontalscrolling='no', verticalscrolling='no')
+  //- #footerTeaser.footer-teaser.footer-teaser-about.ng-scope
+  //-   a.hero.hero-note(href='/notes/2886/what-is-an-agency-partner', ng-href='/notes/2886/what-is-an-agency-partner', style="background-image: url('http://api.prpl.rs/wp-content/uploads/2015/03/Agency_Partner.jpg');")
+  //-     span.up-next
+  //-       strong Further Reading
+  //-     span.teaser-title.ng-binding(ng-bind-html='thePrevPost.title') What the Heck is an Agency Partner?

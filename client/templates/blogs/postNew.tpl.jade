@@ -1,0 +1,27 @@
+#pageNote.page-note.page.ng-scope
+  link(href='http://fonts.googleapis.com/css?family=Inconsolata', rel='stylesheet', type='text/css')
+  aside.author-head(ng-show='disqusReady')
+    a(target='_blank', ng-href='https://www.facebook.com/PurpleRockScissors', href='https://www.facebook.com/PurpleRockScissors')
+      img.photo(alt='Photo of author: PRPL ', src='/img/prpl-badge.jpg')
+    a.back(href='javascript: window.history.back();')
+      i.icon-arrow-left
+      |  Cancel
+    a.back.pull-right(data-action="save")
+      i.fa.fa-check
+      |  Save
+  with post
+    form.theme-default.form-new-post
+      article.the-note(ng-show='thePost')
+        aside.title-info
+          p.note-meta
+            span.category.ng-binding {{category}}
+            //- |  /// 
+            //- span.date-posted.ng-binding {{today}}
+          input.auto-size.h1(name="title", value="{{title}}", placeholder="Enter title here")
+        .the-content
+          .editable(contenteditable="true",  data-placeholder="Here gose your content.", data-medium-element="true", aria-multiline="true", name="body", value="{{{content}}}", placeholder="Here is your content.")
+//- #footerTeaser.footer-teaser.footer-teaser-about.ng-scope
+//-   a.hero.hero-note(href='/notes/2886/what-is-an-agency-partner', ng-href='/notes/2886/what-is-an-agency-partner', style="background-image: url('http://api.prpl.rs/wp-content/uploads/2015/03/Agency_Partner.jpg');")
+//-     span.up-next
+//-       strong Further Reading
+//-     span.teaser-title.ng-binding(ng-bind-html='thePrevPost.title') What the Heck is an Agency Partner?

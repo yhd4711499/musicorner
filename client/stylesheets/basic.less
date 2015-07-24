@@ -1,0 +1,268 @@
+@import '../stylesheets/utils.less';
+@import '../stylesheets/vars.less';
+
+html {
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 14px;
+  //font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  // font-size: 14px;
+  line-height: 1.428571429;
+  // color: #333;
+  background: #000;
+  // overflow-y: hidden;
+  // background-color: #eee;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+a, a:hover {
+  text-decoration: none;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: .8em;
+  color: #fff;
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.h2, h2 {
+  font-size: 30px;
+}
+
+::selection {
+  background: #f26f70;
+  color: #fff;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.428571429;
+}
+
+.giant-header {
+  font-size: 30px;
+  padding: 1em 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  letter-spacing: -2px;
+  line-height: 1.125em;
+
+  @media @tablets{
+    font-size: 70px;
+    letter-spacing: -3px;
+    padding: 70px 25px;
+  }
+}
+
+.giant-hint {
+  font-family: 'Sentinel SSm A','Sentinel SSm B';
+  font-style: normal;
+  font-size: 30px;
+  padding: 2em 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #d0d0d0;
+  letter-spacing: -2px;
+  line-height: 1.125em;
+  text-align: center;
+  @media @tablets{
+    font-size: 50px;
+    letter-spacing: -3px;
+    // padding: 70px 25px;
+  }
+}
+
+.accent{
+  color: #f26f70 !important;
+  font-weight: 500 !important;
+}
+// fonts
+#fsvVideoControls .play-head .elapsed-time, #pageCSVideri .wood .wrap .container .right h2, #site-header #progress-indicator .points-of-interest .prog-tooltips a.hitbox .text-wrap, #site-header .nav-menu .nav-footer .location .name, #site-header .nav-menu .the-links a .secondary, .c1-wrap .blurb .blurb-title, .c1-wrap .c1-center .c1-center-label, .case-study-nav .left-side h3, .case-study-nav .right-side h3, .circle-charts .circle-graph .circle .text, .copy-block h2, .copy-block-white h2, .fancy-quote cite .name, .form-area .detail-buttons .department-name, .form-area .form-header h2, .form-area .job-details h4, .form-area .massive-li a, .fun-fact strong, .gotham-bold, .graph-group .bar-graph .graph-label, .instafeed h2, .little-red-header-link, .minimal-stats .text, .ouc-screen .container .left .red-quote p.source a, .page-about h2, .page-contact .location h3, .page-msa h2, .page-privacy h2, .page-process h2, .para-block h2, .para-block-alt h2, .quote-block h2, .small-header, .small-header-alt, .the-note h1, .the-note h2, .the-note h3, .the-note h4, .the-note h5, .the-note h6 {
+  font-family: 'Gotham SSm A','Gotham SSm B';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.c2-circ .c2-label, .c3-dot .dot-label .title, .circle-charts .circle-graph .graph-percent-value, .form-area .job-details h3, .giant-header, .graph-group .bar-graph .bars .bar, .insta-likes, .nav-tag, .ouc-money .circle .percent, .ouc-money .the-note .the-content p, .ouc-money p.copy, .ouc-money p.copy-small, .ouc-screen .container .left .red-quote .the-note .the-content p, .ouc-screen .container .left .red-quote p.copy, .ouc-screen .container .left .red-quote p.copy-small, .ouc-take-away .left .stat h4, .prpl-values .our-values .value .word, .sentinel-bold, .the-note .the-content .ouc-money p, .the-note .the-content .ouc-screen .container .left .red-quote p {
+  font-family: 'Sentinel SSm A','Sentinel SSm B';
+  font-style: normal;
+  font-weight: 700;
+}
+
+#pageCSFleetgistics .marketing-make .container .left blockquote.photo-quote span, #pageCSFleetgistics .marketing-make .container .left blockquote.pull-quote span, #pageCSVideri .marketing-make .container .left blockquote.photo-quote span, #pageCSVideri .marketing-make .container .left blockquote.pull-quote span, #pageCSVideri .videri-nuts .container .left blockquote.photo-quote span, #pageCSVideri .videri-nuts .container .left blockquote.pull-quote span, #pageCSVideri .wood .wrap .container .right p, .cisco-strategy .minimal-stats li span, .copy, .copy-small, .fancy-quote .quote, .fun-fact, .gradient-mask-text, .large-header, .large-header-alt, .ouc-flip .container .flip-container p, .ouc-teaching .container .left .circle-stat.large h2, .ouc-teaching .container .left .circle-stat.large p, .page-msa address, .page-msa h1, .page-privacy address, .page-privacy h1, .photo-quote .quote, .pull-quote .quote, .sentinel-light, .the-note .the-content p {
+  font-family: 'Sentinel SSm A','Sentinel SSm B';
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+#footerTeaser .hero .up-next,
+#footerTeaser .page-cs .cs-hero .up-next,
+#pageCSFleetgistics .city-scape .container .right .circle-stat.large span,
+#pageCSFleetgistics .city-scape .container .right .circle-stat.small,
+#pageCSVideri .wood .color-palette,
+.author-share .inner-author-share .share-link,
+.author-share .share-area .share-close,
+.btn,
+.btn-gradients,
+.btn-white,
+.btn-white-alpha,
+.btn-with-arrow,
+.c1-wrap ul,
+.fancy-quote cite .title,
+.form-area .form-header .linked-btn,
+.gotham-book,
+.hero .featured-logo,
+.hero .secondary-nav a,
+.large-header .like-this,
+.large-header-alt .like-this,
+.methodologies li,
+.notes-list-entry .note-meta,
+.ouc-book-source .container p.source,
+.ouc-screen .container .left .red-quote p.source strong,
+.ouc-teaching .container .left .circle-stat.large span,
+.ouc-teaching .container .left .circle-stat.small,
+.page-cs #footerTeaser .cs-hero .up-next,
+.page-cs .cs-hero .featured-logo,
+.page-cs .cs-hero .secondary-nav a,
+.panel-cs-featured .pcs-video-text .pcs-label,
+.photo-panel .btn-photo-panel,
+.photo-quote cite,
+.pull-quote cite,
+.the-note .note-meta,
+.the-note blockquote cite {
+  font-family: 'Gotham SSm A','Gotham SSm B';
+  font-style: normal;
+  font-weight: 400;
+}
+
+#footerTeaser .hero .teaser-title,
+#footerTeaser .page-cs .cs-hero .teaser-title,
+.page-cs #footerTeaser .cs-hero .teaser-title {
+  font-size: 2.3em;
+  letter-spacing: -2px;
+  line-height: 1em;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 12px rgba(0,0,0,.3);
+}
+
+#footerTeaser .hero .teaser-title,
+#footerTeaser .page-cs .cs-hero .teaser-title,
+#fsvTitle,
+#pageCSFleetgistics .city-scape .container .right .circle-stat.large h2,
+#pageCSFleetgistics .city-scape .container .right .circle-stat.large p,
+#pageCSRMCAD .the-takeaway .circle-charts .circle-graph .graph-percent-value,
+#pageCSVideri .videri-chocolate .col.left .circle p.stats,
+#pageCSVideri .videri-chocolate .col.right .circle p.stats,
+#site-header .nav-menu .nav-footer,
+#site-header .nav-menu .the-links a .primary,
+#site-loader em,
+.author-head .back,
+.author-share .inner-author-share .note-author,
+.author-share .share-area .auto-size,
+.awards-grid-area .sub-title,
+.c1-wrap .blurb .the-blurb,
+.case-study-nav .left-side p,
+.case-study-nav .right-side .recents ul li a,
+.chart .fig-cite,
+.chart figcaption,
+.chat-area .chat-entry .chat-bubble,
+.circle-toggle .c1-label-active,
+.circle-toggle .c1-label-default,
+.client-grid-area h2,
+.cover-video-text h1,
+.cover-video-text h3,
+.form-area .back-to-description,
+.form-area .form-header .linked-apply,
+.form-area .job-details .job-description,
+.form-area .job-details h2,
+.giant-header>.sub-title,
+.gifn-grid .team-info,
+.graph-key .key-entry .text,
+.graph-percent-text,
+.graph-percent-value,
+.gray-italic-link,
+.grey-italic-link,
+.hero h1,
+.mobile-chart .mobile-chart-group li,
+.mobile-chart .mobile-chart-group p,
+.notes-list-entry .note-author,
+.notes-list-entry .note-title,
+.ouc-flip .container .flip-container h3,
+.ouc-money .circle h4,
+.ouc-money h3,
+.ouc-take-away .left .stat p,
+.ouc-teaching .container .right p.stat,
+.page-contact .location,
+.page-contact .thankyou-message .the-form-thanks p,
+.page-cs #footerTeaser .cs-hero .teaser-title,
+.page-cs .cs-hero .cs-description,
+.page-cs .cs-hero .cs-title,
+.page-cs .cs-hero h1,
+.prpl-team .gifn-cite,
+.prpl-values .our-values .value .description,
+.sentinel-book,
+.shout-out,
+.the-note .title-info h1,
+.the-note blockquote,
+.the-note ol,
+.the-note ul,
+.the-reasons .gimme-another .left-text,
+.the-reasons .gimme-another .right-text,
+.the-reasons .reason,
+.the-reasons .reason h3,
+.tooltip-wrap .tooltip-text,
+form.theme-default .custom-select,
+form.theme-default .form-panel .question,
+form.theme-default .radio-wrap .radio-option label,
+form.theme-default input,
+form.theme-default textarea {
+  font-family: 'Sentinel SSm A','Sentinel SSm B';
+  font-style: normal;
+  font-weight: 400;
+}

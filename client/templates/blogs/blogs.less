@@ -1,0 +1,82 @@
+@import '../../stylesheets/utils.less';
+@import '../../stylesheets/vars.less';
+
+.hero-note,
+.hero-notes {
+  background: url(/img/starry-sky-over-the-city-19467.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page-note,
+.page-notes {
+  background: #fff;
+  color: #202020;
+}
+
+.notes-list-full {
+  padding: 60px 0 0;
+}
+
+.home-notes-list {
+  border-bottom: 1px solid #e5e5e5;
+  
+  .notes-list-entry {
+    padding-right: 70px;
+    text-align: left;
+
+    @media @tablets{
+      text-align: center;
+      padding-right: 35px;
+    }
+
+    .note-title {
+      text-align: left;
+      line-height: 30px;
+
+      @media @tablets{
+        text-align: center;
+        line-height: 60px;
+      }
+    }
+
+    .note-author {
+      padding: 0;
+    }
+
+    &:after{
+      display: block;
+      width: 20px;
+      height: 30px;
+      content: "J";
+      font-family: purple2014;
+      color: #f26f70;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      margin-top: -15px;
+      font-size: 20px;
+      -webkit-transition: color .2s ease-in;
+      -moz-transition: color .2s ease-in;
+      -o-transition: color .2s ease-in;
+      transition: color .2s ease-in;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+
+      @media @tablets{
+        display: none;
+      }
+    }
+  }
+
+  span.desktop-only {
+    @media @tablets{
+      display: inline;
+    }
+  }
+}

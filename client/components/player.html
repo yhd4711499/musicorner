@@ -1,0 +1,16 @@
+<template name="player">
+	<div class="player">
+		<div id="control-panel">
+			<i class="fa fa-backward" id="rewind"></i>
+			{{#if playing}}
+				<i class="fa fa-pause" id="playToggle"></i>
+			{{else}}
+				<i class="fa fa-play" id="playToggle"></i>
+			{{/if}}
+			<i class="fa fa-forward" id="forward"></i>
+		</div>
+		<div class="visualizer">
+			<canvas id='canvas'></canvas>
+		</div>
+	</div>
+</template>

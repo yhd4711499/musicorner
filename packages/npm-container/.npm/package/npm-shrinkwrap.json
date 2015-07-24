@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "musicmetadata": {
+      "version": "1.0.1",
+      "dependencies": {
+        "deep-equal": {
+          "version": "0.2.1"
+        },
+        "filereader-stream": {
+          "version": "0.2.0",
+          "dependencies": {
+            "inherits": {
+              "version": "1.0.0"
+            }
+          }
+        },
+        "iconv-lite": {
+          "version": "0.4.7"
+        },
+        "node-bitarray": {
+          "version": "0.0.2"
+        },
+        "strtok2": {
+          "version": "1.0.1"
+        },
+        "sum-component": {
+          "version": "0.1.1",
+          "dependencies": {
+            "to-function": {
+              "version": "2.0.6",
+              "dependencies": {
+                "component-props": {
+                  "version": "1.1.1"
+                }
+              }
+            }
+          }
+        },
+        "through": {
+          "version": "2.3.6"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.nav-bar
+  a.hamburger(href='javascript:;', data-action='toggleNavMenu')
+    span.sr-only Menu Icon
+    span.bar.bar-1
+    span.bar.bar-2
+    span.bar.bar-3
+    span.bar.bar-4
+.nav-menu.max-width(data-webkit-touch-overflow-hack='true')
+  nav.the-links
+    each menus
+      a(href=url)
+        span.primary {{title}}
+        span.secondary {{subTitle}}
+  // /.the-links
+  .nav-footer
+    .left-side
+      //- address.location
+      //-   span.name PRPL HQ
+      //-   span.street
+      //-     | 189 South Orange Avenue, Suite 2020
+      //-     br
+      //-     | Orlando, Florida 32801 (
+      //-     a.external-link(href='https://www.google.com/maps/place/Purple,+Rock,+Scissors/@28.5405625,-81.3788632,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x946b0cfd3f970407', target='_blank', external-link-cursor='') map it
+      //-     | )
+      //- span.leads
+      //-   em New biz:
+      //-   a(href='mailto:biz@prpl.rs') biz@prpl.rs
+      //-   |  
+      //-   em Say hi:
+      //-   a(href='mailto:hello@prpl.rs') hello@prpl.rs
+    // /.left-side
+    .right-side
+      //- p.socials
+      //-   a(target='_blank', analytics-on='click', analytics-event='Twitter', analytics-category='Main Nav Social Icons', href='http://twitter.com/prplrckscssrs')
+      //-     i.icon-twitter
+      //-       span.sr-only Twitter
+      //-   a(target='_blank', analytics-on='click', analytics-event='Facebook', analytics-category='Main Nav Social Icons', href='https://www.facebook.com/PurpleRockScissors')
+      //-     i.icon-facebook-squared
+      //-       span.sr-only Facebook
+      //-   a(target='_blank', analytics-on='click', analytics-event='Instagram', analytics-category='Main Nav Social Icons', href='http://instagram.com/prplrckscssrs')
+      //-     i.icon-instagrem
+      //-       span.sr-only Instagram
+      //-   a(target='_blank', analytics-on='click', analytics-event='Dribbble', analytics-category='Main Nav Social Icons', href='https://dribbble.com/prplrckscssrs')
+      //-     i.icon-dribbble
+      //-       span.sr-only Dribbble
+      //-   a(target='_blank', analytics-on='click', analytics-event='LinkedIn', analytics-category='Main Nav Social Icons', href='https://www.linkedin.com/company/purple-rock-scissors')
+      //-     i.icon-linkedin
+      //-       span.sr-only LinkedIn
+      //-   a(target='_blank', analytics-on='click', analytics-event='YouTube', analytics-category='Main Nav Social Icons', href='https://www.youtube.com/user/purplerockscissors/')
+      //-     i.icon-fontawesome-webfont-2
+      //-       span.sr-only YouTube
+      p.sosumi
+        | copyleft 2014 / A personal website
